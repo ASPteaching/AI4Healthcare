@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Artificial Intelligence and Big Data</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alex Sanchez-Pla" />
+    <meta name="date" content="2022-12-20" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="mycss.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Artificial Intelligence and Big Data
+]
+.subtitle[
+## in Health Care and Research
+]
+.author[
+### Alex Sanchez-Pla
+]
+.institute[
+### Universitat de Barcelona and <br> Vall d’Hebron Research Institute
+]
+.date[
+### 2022-12-20
+]
+
+---
+
+
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+    font-size: 24px;
+    padding: 1em 4em 1em 4em;
+}
+.left-code {
+  color: #777;
+  width: 38%;
+  height: 92%;
+  float: left;
+}
+.right-plot {
+  width: 60%;
+  float: right;
+  padding-left: 1%;
+}
+&lt;/style&gt;
+
+
+
+
+# Outline
+
+.columnwide[
+  ### 1) [AI is Everywhere, also in Health](#Introduction)
+  ### 2) [Data, Health Data, Big Data](#Data)
+  ### 3) [Data Science, Machine Learning and AI](#FRomDS2AI)
+  ### 4) [Challenges and Limitations](#AIExamples)
+  ### 5) [Not to talk about Ethics](#Ethics)
+  ### 6) [Summary](#Summary)
+]
+
+---
+
+class: inverse, middle, center
+
+name: Introduction
+
+# Artificial Intelligence Everywhere, also in Health
+
+---
+
+# AI : Everyone talks about it
+
+&lt;img align = "center" src="images/ai-everywhere1.jpg" width = "100%"&gt; 
+
+---
+
+# AI : Everyone talks about it
+
+- AI is a broad term that refers to _any technology that enables a machine to perform tasks that would typically require human intelligence_, such as __learning__, __problem-solving__, and __decision-making__. 
+
+- AI is present in many different technologies and applications that we use every day, such as smartphones, social media, and personal assistants like Siri and Alexa. 
+- As a result, AI has become *an integral part of our daily lives*, and it is increasingly being used in a wide range of industries and applications. 
+
+&lt;!-- - This is why we can argue that AI is "everywhere" – it is present in many different aspects of our daily lives, and it is continuing to grow and expand. --&gt;
+---
+# Examples of AI in everyday life
+
+- __Smartphone personal assistants__, Siri and Google Assistant.
+- __Social media algorithms__,  to recommend content and customize user experiences.
+- __Virtual assistants__, Amazon's Alexa and Apple's HomePod.
+- __Autonomous vehicles__, such as self-driving cars, which use AI to navigate roads and make driving decisions.
+- __Fraud detection systems__, which use AI to analyze transactions and identify potential fraudulent activity.
+- __Customer service chatbots__, which use natural language processing to provide answers to customer inquiries.
+- __Healthcare systems__, which use AI to analyze medical images and assist with diagnosis and treatment planning.
+- And many other such as: __Online education platforms__, __Video game AI__ or __Recommender Systems__.
+
+---
+
+# AI in Health care
+
+![](images/paste-4B43A730.png)
+---
+
+# AI will (mostly) help, not replace
+
+.left-column[
+&lt;br&gt;
+.center[ 
+&lt;img align = "center" src="images/deepMedicine.png" height = "110%"&gt; 
+ ]
+]
+.right-column[
+- A common concern is _Will AI replace humans?_
+- AI advocates don't think so, instead they talk of _complement_, _enhance_, support... 
+- This concern also exists in medicine
+  - Some AI experts claim that in 3-5 years radiologist will not be necessary anymore.
+- Dr. Eric Topol in his book Deep Medicine:
+  - Introducing AI in Healthcare is good
+  - It lets the machine do the machine work
+      - Fill forms, Scan images
+    - With more efficiency and new workflows.
+  - And the doctor has more time for patients.
+]
+---
+# AI is not  future, it is here now
+
+.center[ 
+&lt;img align = "center" src="images/AITransformsHealthCare.png" height = "110%"&gt; 
+ ]
+
+---
+
+# AI end well being
+
+.left-column[
+&lt;br&gt;
+.center[ 
+&lt;img align = "center" src="images/AI4Health1.png" height = "100%"&gt; 
+
+&lt;img align = "center" src="images/AI4Health1.jpg" height = "100%"&gt; 
+  ]
+]
+.right-column[
+- AI powered monitoring gadgets, such as bracelets, smart watches and many other   have become common.
+- Some, such as the Apple Watch allow for continuous heart-rate monitoring and are inteded to detect potential CV incidents.
+- Many potential benefits: 
+  - Motivation for exercise
+  - Real time data for detection / prevention
+- But not free from problems
+  - Lack of standarization and credibility
+  - Potential data protection issues when sahring data
+]
+---
+
+# AI in Health for early detection
+
+.left-column[
+&lt;br&gt;
+.center[ 
+&lt;img align = "center" src="images/AI4Health2.png" height = "100%"&gt; 
+
+&lt;img align = "center" src="images/IDH1 mutant glioblastoma.png" height = "100%"&gt; ]
+]
+.right-column[
+- AI, particularly through image analysis with deep learning, is being used to detect diseases, such as cancer, more accurately in early stages.
+- Automatic detection can be faster and highly accurate, but _beware of biases and overfitting_ 
+- It can reduce false positives and unnecessary expensive/dangerous tests s.a. biopsies.
+- Not free from problems
+  - Gender or race biases exist
+  - Somee tumours that would never progress arre included causing unnecessary alert
+  
+[Can Artificial Intelligence Help See Cancer in New, and Better, Ways?](https://www.cancer.gov/news-events/cancer-currents-blog/2022/artificial-intelligence-cancer-imaging)
+]
+
+---
+
+# AI for Diagnosis and Prognosis 
+
+.left-column[
+&lt;br&gt;
+.center[ 
+&lt;img align = "center" src="images/AI4Health3.png" height = "100%"&gt; 
+
+&lt;img align = "center" src="images/nature-cover.jpg" height = "100%"&gt;  ]
+]
+.right-column[
+- Machine learning algorithms are being used in many fileds for classification (diagnosis) and prediction (prognosis).
+- Some may work like black-boxes (less intuitive than some statistical models), 
+- Under the appropriate circumstances, enough data, and _correctly used_ may be very accurate.
+- Typical scenario is analysis of medical imaging data or real time monitoring signals.
+
+[Dermatologist-level classification of skin cancer with deep neural networks](https://www.nature.com/articles/nature21056)
+]
+---
+
+# AI for Treatment design
+
+.left-column[
+&lt;br&gt;
+.center[ 
+&lt;img align = "center" src="images/AI4Health5.png" height = "100%"&gt; 
+
+&lt;img align = "center" src="images/AI4Health5.jpg" height = "100%"&gt;  ]
+]
+.right-column[
+- AI empowered systems may be used to analyze EHR, Images and reports from a patient’s history to help select the correct, individually
+customized treatment path.  
+- Data availability, combined with AI tools allows shifting from:
+  - _Treatments for populations_ where medical decisions are taken based on a few similar physical characteristics among patients, to
+  - _Preventive, Personalized, Precision_ medicine to provide the specific treatment for a specific patient]
+  
+  [Precision Medicine, AI, and the Future of Personalized Health Care
+](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7877825/)
+
+
+---
+class: inverse, middle, center
+
+name: Data
+
+# Data, Health Data and Big Data
+
+---
+# The players of healthcare
+
+.center[ 
+&lt;img align = "center" src="images/HealthData1.png" width = "90%"&gt; 
+]
+
+---
+
+# The health data life cycle
+
+.center[ 
+&lt;img align = "center" src="images/HealthData2.png" width = "90%"&gt; 
+]
+
+## Health data types
+
+.pull-left[
+- Electronic health records
+- Medical claims
+- Clinical notes
+- Medical literature
+- Continuous signals
+]
+.pull-right[
+- Imaging data
+- Medical ontology
+- Clinical trial data
+- Drug discovery data
+]
+---
+#  Electronic Health Records (EHR)
+
+
+.center[ 
+&lt;img align = "center" src="images/HealthData3.png" width = "90%"&gt; 
+]
+
+---
+
+# The EHR workflow
+
+
+.center[ 
+&lt;img align = "center" src="images/HealthData4a.png" width = "100%"&gt; 
+]
+---
+
+# Longitudinal EHR data
+
+.center[
+&lt;img align = "center" src="images/HealthData4b.png" heighth = "75%"&gt; 
+]
+
+---
+
+# Properties of EHR 
+
+&lt;br&gt;
+.center[
+&lt;img align = "center" src="images/HealthData4.png" heighth = "125%"&gt; 
+]
+
+- Electronic Health Records are the main source of information in Health Care
+- While potentially very useful its variety hinders the possibilities of a faster and more powerul profitability.
+
+---
+
+# Health Care Data is Big
+
+&lt;br&gt;
+.center[
+&lt;img align = "center" src="images/HealthCareData5.png" heighth = "125%"&gt; 
+]
+
+---
+
+
+class: inverse, middle, center
+
+name: FRomDS2AI
+
+# Data Science, Machine Learning and Artifiical Intelligence
+
+---
+# Data Science, Machine Learning and Artificial Intelligence
+
+.center[
+&lt;img align = "center" src="images/AIMLDS1.png" heighth = "125%"&gt; 
+]
+
+---
+
+# Machine Learning and Artificial Intelligence
+
+.center[
+&lt;img align = "center" src="images/AIMLDS2.png" heighth = "125%"&gt; 
+]
+
+---
+
+# Artificial Intelligence (s)
+
+.center[
+&lt;img align = "center" src="images/AIMLDS3.png" heighth = "125%"&gt; 
+]
+
+---
+
+class: inverse, middle, center
+
+name: Ethics
+
+# Not to talk about Ethics
+
+---
+# Not to talk about Ethics
+
+---
+
+class: inverse, middle, center
+
+name: summary
+
+# Summary
+
+---
+# Summary
+
+---
+
+class: inverse, middle, center
+
+name: Resources
+
+# References and Resources
+
+---
+# References and Resources
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
